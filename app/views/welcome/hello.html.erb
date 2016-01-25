@@ -1,0 +1,23 @@
+<% @page_tile="Hello" %>
+
+<h2>HELLO</h2>
+
+
+<p>The time is now <%= Time.now %> </p>
+<%= 1+1 %> <br>
+
+<% target = "world" %>
+<%= "Hello #{target}" %>
+
+<% @array.each do |n| %> 
+<%= n %>
+<% end %>
+
+<br>
+
+ID: <%= params[:id] %> <br>
+ID: <%= @id %> <br>
+Page: <%= @page %> <br>
+Next Page: <%= @page +1 %>
+
+<%= params.inspect %>
