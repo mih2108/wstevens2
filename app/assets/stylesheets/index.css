@@ -36,10 +36,9 @@ nav ul {text-align:center;}
 nav ul li {float:left;display:inline; width:auto;}
 nav ul li:hover {background:#E6E6E6;}
 nav ul li a {display:block;padding:0px 25px;color:#444; font-size:12px}
-nav ul li ul {position:absolute; width: auto;float:left; clear:left;background:transparent;list-style: none; padding-left: 0px;}
-nav ul li ul li {float:left; clear:left;}
+nav ul li ul {position:absolute; width: 130px;float:left; clear:left;background:transparent;list-style: none; padding-left: 0px;}
+nav ul li ul li {float:left; clear:left; text-align: left}
 nav ul li ul li a {display:block;padding:15px 0px;color:#444}
 nav ul li ul li:hover a {background:#F7F7F7;}
 nav ul li ul.fallback {display:none;}
 nav ul li:hover ul.fallback {display:block;}
-/
