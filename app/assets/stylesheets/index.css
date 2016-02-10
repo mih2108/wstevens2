@@ -1,3 +1,45 @@
-body {
-	background-color: blue;
+html {
+height: 100%;
+width: 100%;
 }
+body {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c4c4c4+0,5b6362+91 */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c4c4c4+0,6c8b9b+96 */
+background: #c4c4c4; /* Old browsers */
+background: -moz-linear-gradient(top,  #c4c4c4 0%, #6c8b9b 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #c4c4c4 0%,#6c8b9b 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #c4c4c4 0%,#6c8b9b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c4c4c4', endColorstr='#6c8b9b',GradientType=0 ); /* IE6-9 */
+
+}
+
+header {
+  padding: 25px 0;
+  overflow: hidden;
+}
+
+.container {
+	width:100%;
+	margin: 0 auto;
+	padding-left: 3%;
+	z-index:99;
+	position:absolute;
+}
+
+.logo {
+	font-size: 12px;
+	float:left;
+	height: 50px;
+}
+nav {background:transparent;float:right; margin-right:5%;}
+nav ul {text-align:center;}
+nav ul li {float:left;display:inline; width:auto;}
+nav ul li:hover {background:#E6E6E6;}
+nav ul li a {display:block;padding:0px 25px;color:#444; font-size:12px}
+nav ul li ul {position:absolute; width: auto;float:left; clear:left;background:transparent;list-style: none; padding-left: 0px;}
+nav ul li ul li {float:left; clear:left;}
+nav ul li ul li a {display:block;padding:15px 0px;color:#444}
+nav ul li ul li:hover a {background:#F7F7F7;}
+nav ul li ul.fallback {display:none;}
+nav ul li:hover ul.fallback {display:block;}
+/

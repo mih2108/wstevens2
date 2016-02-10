@@ -1,20 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-
+	<meta charset="UTF-8">
+	<title>Wallace Stevens Society</title>
+	<% @page_title="Wallace Stevens Society" %>
+	<!--<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css"> -->
+	<%= stylesheet_link_tag('normalize', :media =>'all') %>
+	<%= stylesheet_link_tag('index', :media =>'all') %>
 </head>
-<body><%= stylesheet_link_tag('index', :media =>'all') %>
-<% @page_title="Index" %>
-<p>The time is now <%= Time.now %> </p>
-<p>test!!</p>
-<p>Martha</p>
+<body>
+	<header>
+		<div class="container">
+			<h1 class="logo">Wallace Stevens Society</h1>
+				<nav>
+				  <ul>
+				    <li>
+				      <a href="#">About</a>
+				      <ul class="fallback">
+				        <li><a href="#">About Wallace Stevens</a></li>
+				        <li><a href="#">The Wallace Stevens Society</a></li>
+				        <li><a href="#">Upcoming Events	</a></li>
+				      </ul>
+				    </li>
+				    <li>
+				      <a href="#">Journal</a>
+				      <ul class="fallback">
+				        <li><a href="#">Call for Papers</a></li>
+				        <li><a href="#">Listing of Articles</a></li>
+				      </ul>
+				    </li>
+				    <li><a href="#">Resources</a></li>
+				    <li><a href="#">Online Condordance</a></li>
+				  </ul>
+				</nav>
 
-<%= image_tag('wallace_stevens_main.jpg') %>
+		</div>
+	</header>
+	
 
-<a href="/welcome/hello">Hello Page</a> <br> |
-<%= link_to('Hello page 2', {:action => 'hello'}) %> <br>
-
-<%= link_to('Hello with paramenters', {:action => 'hello', :page => 5, :id => 20}) %> <br>
-
-<%= link_to('Roar', "#", :onclick => "jsRoar(); return: true") %>
-<%= javascript_tag("jsRoar();") %>
+<%= javascript_include_tag('jquery-1.11.3.min') %>
+<%= javascript_include_tag("public")%>
+<%= javascript_include_tag("index")%>
 </body>
-
+</html>
+<body>

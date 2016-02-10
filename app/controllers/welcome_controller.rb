@@ -18,4 +18,8 @@ def other_hello
 	redirect_to(:controller => 'welcome', :action => 'index')
 end
 
+def text_helpers
+	
+end
+
 end
