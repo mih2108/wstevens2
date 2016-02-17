@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Wallace Stevens Society</title>
+	<% @page_title="Wallace Stevens Society" %>
+	<!--<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css"> -->
+	<%= stylesheet_link_tag('normalize', :media =>'all') %>
+	<%= stylesheet_link_tag('about', :media =>'all') %>
+	<%= stylesheet_link_tag('owl.carousel.css', :media => 'all') %>
+	<%= stylesheet_link_tag('owl.theme.css', :media => 'all') %>
+	<link href='https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="logo"><%= link_to image_tag('logo.png'), 'index' %></div>
+				<nav>
+				  <ul>
+				    <li>
+				      <a href="#">About</a>
+				      <ul class="fallback">
+				        <li><a href="#">About Wallace Stevens</a></li>
+				        <li><a href="#">The Wallace Stevens Society</a></li>
+				        <li><a href="#">Upcoming Events	</a></li>
+				      </ul>
+				    </li>
+				    <li>
+				      <a href="#">Journal</a>
+				      <ul class="fallback">
+				        <li><a href="#">Call for Papers</a></li>
+				        <li><a href="#">Listing of Articles</a></li>
+				      </ul>
+				    </li>
+				    <li><a href="#">Resources</a></li>
+				    <li><a href="#">Online Concordance</a></li>
+				  </ul>
+				</nav>
+
+		</div>
+	</header>
+<div class="maintext">
+<div class="biopic"><%= image_tag('wallace_stevens_bio.jpg') %></div>
+<div class="heading"><h3>ABOUT</h3><h1>WALLACE STEVENS</h1></div>
+
+	<div class="abouttext"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+
+
+</div>
+
+
+<%= javascript_include_tag('jquery-1.11.3.min') %>
+<%= javascript_include_tag("public")%>
+<%= javascript_include_tag("index")%>
+<%= javascript_include_tag("owl.carousel.js") %>
+</body>
+</html>
+<body>

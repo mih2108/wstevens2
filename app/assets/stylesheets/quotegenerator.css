@@ -44,12 +44,18 @@ nav ul li ul li:hover a {text-decoration: underline;}
 nav ul li ul.fallback {display:none;}
 nav ul li:hover ul.fallback {display:block;}
 
-/*carousel*/
-.carholder {width:100%; position: absolute; background-color: #d9cfc4; height: 400px; border: #2E2C2A solid 2px;}
-#owl-main .item img{
-    display: block;
-    width: auto;
-    max-height: 400px;
-    margin: 0 auto;	
-}
+.maintext{width: 100%; background-color: #d9cfc4; height: 500px; border: solid 2px #2E2C2A; text-align: center;}
+.heading{margin:0 auto; padding-top: 3%; padding-bottom: 1%}
+.heading h1,h3{display: inline; }
+.heading h1{padding-left: .5em;}
+
+.formtable {margin: 0 auto; display: inline-table;}
+table {background: white; border: 2px solid #2E2C2A;}
+.formrow{width:auto; border: 2px solid #2E2C2A;padding-top: 1em;}
+td{padding-left:1em; width: auto; float:left; padding-top: 1em; padding-bottom: 1em;}
+#selectors{border:2px solid #2E2C2A; background-color:rgb(230, 230, 230);}
+#button-cell{padding-right: 1em;}
+#quote{height: 300px;}
+
+
 

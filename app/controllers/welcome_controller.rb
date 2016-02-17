@@ -22,4 +22,13 @@ def text_helpers
 	
 end
 
+
+def about
+
+end
+
+def quotegenerator
+
+end
+
 end

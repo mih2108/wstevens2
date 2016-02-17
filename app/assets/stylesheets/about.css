@@ -34,10 +34,10 @@ header {
 /*nav bar*/
 nav {background:transparent;float:right; margin-right:5%;padding-bottom: 3%;}
 nav ul {text-align:center;}
-nav ul li {float:left;display:inline; width:auto; padding-top: 1.7%;}
+nav ul li {float:left;display:inline; width:auto;padding-top: 1.7%}
 nav ul li:hover {text-decoration: underline;}
 nav ul li a {display:block;padding:0px 25px;color:#2E2C2A; font-size:14px; font-weight: 700; text-decoration: none;}
-nav ul li ul {position:absolute; width: 130px;float:left; clear:left;background: rgba(230, 230, 230, 0.95); list-style: none; padding-left: 0px;}
+nav ul li ul {position:absolute; width: 130px;float:left; clear:left;background: rgba(230, 230, 230, 0.8); list-style: none; padding-left: 0px;}
 nav ul li ul li {float:left; clear:left; text-align: left;}
 nav ul li ul li a {display:block;padding:15px 0px;color:#2E2C2A; font-weight: 700;, text-decoration: none;}
 nav ul li ul li:hover a {text-decoration: underline;}
@@ -45,11 +45,10 @@ nav ul li ul.fallback {display:none;}
 nav ul li:hover ul.fallback {display:block;}
 
 /*carousel*/
-.carholder {width:100%; position: absolute; background-color: #d9cfc4; height: 400px; border: #2E2C2A solid 2px;}
-#owl-main .item img{
-    display: block;
-    width: auto;
-    max-height: 400px;
-    margin: 0 auto;	
-}
+.maintext {width:100%; position: absolute; background-color: rgba(217, 207, 196, .6); height: auto; padding:3%; color:#2E2C2A; border: #2E2C2A solid 2px;}
+.biopic{float:left; display: inline; padding-left: 2.8em; padding-top: 1em;}
+.heading{float: right; display: inline; width:55%; padding-right:11em;color:#2E2C2A;}
+.heading h1,h3 {display: inline;}
+.heading h1{padding-left: .5em}
+.abouttext {float: right; width: 55%; padding-right: 11em; display: inline}
 
