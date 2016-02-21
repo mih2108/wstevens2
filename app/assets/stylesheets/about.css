@@ -4,6 +4,7 @@ width: 100%;
 }
 body {
 font-family: 'PT Serif', serif;	
+font-size: 18px;
   background: url('background.png') no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
