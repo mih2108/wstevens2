@@ -14,7 +14,8 @@ font-family: 'PT Serif', serif;
 header {
   padding: 5px 0 30px 0;
   overflow: hidden;
-  margin-bottom: 4%;
+  height: auto;
+  margin-bottom: 3em;
 }
 
 .container {
@@ -28,10 +29,12 @@ header {
 .logo {
 	font-size: 12px;
 	float:left;
-	max-height: 15px;
+	min-height: 75px;
+  display: inline-block;
 
 }
-/*nav bar*/
+/*nav bar not collapsed*/
+
 nav {background:transparent;float:right; margin-right:5%;padding-bottom: 3%;}
 nav ul {text-align:center;}
 nav ul li {float:left;display:inline; width:auto; padding-top: 1.7%;}
@@ -39,10 +42,12 @@ nav ul li:hover {text-decoration: underline;}
 nav ul li a {display:block;padding:0px 25px;color:#2E2C2A; font-size:14px; font-weight: 700; text-decoration: none;}
 nav ul li ul {position:absolute; width: 130px;float:left; clear:left;background: rgba(230, 230, 230, 0.95); list-style: none; padding-left: 0px;}
 nav ul li ul li {float:left; clear:left; text-align: left;}
-nav ul li ul li a {display:block;padding:15px 0px;color:#2E2C2A; font-weight: 700;text-decoration: none;}
+nav ul li ul li a {display:block; padding:15px 0px;color:#2E2C2A; font-weight: 700; text-decoration: none;}
 nav ul li ul li:hover a {text-decoration: underline;}
 nav ul li ul.fallback {display:none;}
 nav ul li:hover ul.fallback {display:block;}
+
+nav .line {width: 3em; height: .3em; background-color: black; border-radius: 1em; margin-top: .25em;}
 
 .maintext{width: 100%; background-color: #d9cfc4; height: 500px; border: solid 2px #2E2C2A; text-align: center;}
 .heading{margin:0 auto; padding-top: 3%; padding-bottom: 1%}
@@ -50,12 +55,52 @@ nav ul li:hover ul.fallback {display:block;}
 .heading h1{padding-left: .5em;}
 
 .formtable {margin: 0 auto; display: inline-table;}
-table {background: white; border: 2px solid #2E2C2A;}
-.formrow{width:auto; border: 2px solid #2E2C2A;padding-top: 1em;}
+table {background: white; border: 2px solid #2E2C2A; width: 650px;}
+.form-row{width:auto; border: 2px solid #2E2C2A;padding-top: 1em;}
 td{padding-left:1em; width: auto; float:left; padding-top: 1em; padding-bottom: 1em;}
 #selectors{border:2px solid #2E2C2A; background-color:rgb(230, 230, 230);}
-#button-cell{padding-right: 1em;}
-#quote{height: 300px;}
+#button-cell{padding-left: 5em;}
+
+.form-row-quote{border: none; padding-top: 3em; display:table; width: 100%; height: 300px;}
+.form-row-quote td{vertical-align: bottom; padding-top: 20px; padding-right: 20px;}
+
+#quote{height: auto; width: 100%; text-align: center; display: inline-table;}
+#source{height: auto; width: 100%; text-align: right; display: inline-table;}
+#quotetd{text-align: center; width: 100%; padding-left: 0;}
+#sourcetd{text-align: center; width: 100%; padding-left: 0;}
+
+
+@media screen and (max-width: 850px) {
+  nav {float:left; width:100%; height: auto; line-height: 1.5em; padding-bottom: 0;}
+  .container{height: auto;  position: relative;}
+  nav ul li ul{position: relative;}
+  
+  header{margin-bottom: 0;}
+  }
+
+@media screen and (max-width: 570px) {
+	table{width:400px;}
+  .heading h1,h3{display: block; float:left; padding-bottom: 0; margin: 0 auto;}
+  .heading h1{ display: block; float: left; padding: 0; width: 570px; text-align: left; font-size: 12;};
+  .heading h3{ float: left; width: 570px; margin: 0 auto; font-size: 10;};
+}
+
+@media screen and (max-width: 535px) {
+  nav ul li ul{list-style: none;}
+  nav ul li ul li {display: block; float:left; clear: left;}
+  nav ul li a{ font-size:  10px;}
+  #selectors {width: 400px; float:left; display: block;}
+  td {padding-top: 0; text-align: left;}
+  #button-cell{padding-left:30%;}
+
+}  
+
+@media screen and (max-width: 461px) {
+  nav ul li ul{list-style: none;}
+  nav ul li ul li {display: block; float:left; clear: left; }
+  nav ul li a{ font-size:  10px; min-width: 461px; text-align: left; }
+}  
+
 
 
 

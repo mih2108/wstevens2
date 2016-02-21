@@ -49,12 +49,6 @@ nav ul li:hover ul.fallback {display:block;}
 
 nav .line {width: 3em; height: .3em; background-color: black; border-radius: 1em; margin-top: .25em;}
 
-@media screen and (max-width: 963px) {
-	.biopic{width:100%; display: block; margin-right: 0;}
-	.heading{width: 963px; display: none; padding-left:0; position: relative;}
-	.heading h1,h3{display: block;}
-	.abouttext{width: auto; display: block; padding-right: 0;}
-}
 @media screen and (max-width: 850px) {
   nav {float:left; width:100%; height: auto; line-height: 1.5em; padding-bottom: 0;}
   .container{height: auto;  position: relative;}
@@ -67,7 +61,6 @@ nav .line {width: 3em; height: .3em; background-color: black; border-radius: 1em
   nav ul li ul{list-style: none;}
   nav ul li ul li {display: block; float:left; clear: left;}
   nav ul li a{ font-size:  10px;}
-  .heading{display: block;}
 }  
 
 @media screen and (max-width: 461px) {
@@ -76,12 +69,21 @@ nav .line {width: 3em; height: .3em; background-color: black; border-radius: 1em
   nav ul li a{ font-size:  10px; min-width: 461px; text-align: left; }
 }  
 
-/*bio*/
-.maintext {width:100%; position: relative; float:left; background-color: rgba(217, 207, 196, .6); height: auto; padding:3%; color:#2E2C2A; border: #2E2C2A solid 2px;}
-.biopic{float:left; display: inline; padding-left: 2.8em; padding-top: 1em; margin-right: 3em; width:17%; }
-.heading{float: left; display: inline; width:65%; color:#2E2C2A; position: relative; padding-left: 4em;}
-.heading h1,h3 {display: inline; }
-.heading h1{padding-left: .5em;}
-.abouttext {float: left; position: relative; display: inline block; padding-right: 5em; width: 65%;}
-.abouttext p{padding-left: 4em; display: inline-block;}
+.maintext {width:100%; min-height: 475px;position: relative; float:left; background-color: rgba(217, 207, 196, .6); padding:3%; color:#2E2C2A; border: #2E2C2A solid 2px;}
+table {background: white; border: 2px solid #2E2C2A; width: auto;}
+.form-row{width:auto; border: 2px solid #2E2C2A;padding-top: 1em; padding-right: 2em;}
+/*.form-row:first-of-type{background-color: gray;}*/
+td {text-align: left; padding-left:1em; float:left; padding-top: 1em; padding-bottom: 1em;}
+th {text-align: left; padding-left:1em; float:left; padding-top: 1em; padding-bottom: 1em;}
+.ptitle{width:15em;}
+.pyear{width:10em;}
+.pbook{width:12em;}
+.span2{width: 30em;}
+.input-append{margin-bottom: 2em;}
+thead{background-color: rgba(230, 230, 230, 0.95);}
+
+
+
+
+
 

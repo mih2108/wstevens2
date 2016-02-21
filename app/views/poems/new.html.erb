@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Wallace Stevens Society</title>
+  <% @page_title="Wallace Stevens Society" %>
+  <!--<link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css"> -->
+  <%= stylesheet_link_tag('normalize', :media =>'all') %>
+  <%= stylesheet_link_tag('index_poem', :media =>'all') %>
+  <%= stylesheet_link_tag('owl.carousel.css', :media => 'all') %>
+  <%= stylesheet_link_tag('owl.theme.css', :media => 'all') %>
+  <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo"><%= link_to image_tag('logo.png'), root_path %></div>
+        <nav>
+          <ul>
+            <li>
+              <a href="#">About</a>
+              <ul class="fallback">
+                <li><a href="about">About Wallace Stevens</a></li>
+                <li><a href="#">The Wallace Stevens Society</a></li>
+                <li><a href="#">Upcoming Events </a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Journal</a>
+              <ul class="fallback">
+                <li><a href="#">Call for Papers</a></li>
+                <li><a href="#">Listing of Articles</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">Online Concordance</a></li>
+          </ul>
+        </nav>
+
+    </div>
+  </header>
+  <h1>New Poem</h1>
+
+<%= render 'form' %>
+
+<%= link_to 'Back', poems_path %>
+
+<%= javascript_include_tag("public")%>
+<%= javascript_include_tag("index")%>
+<%= javascript_include_tag("owl.carousel.js") %>
+</body>
+</html>
+<body>

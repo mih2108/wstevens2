@@ -14,7 +14,8 @@ font-family: 'PT Serif', serif;
 header {
   padding: 5px 0 30px 0;
   overflow: hidden;
-  margin-bottom: 4%;
+  height: auto;
+  margin-bottom: 3em;
 }
 
 .container {
@@ -28,10 +29,12 @@ header {
 .logo {
 	font-size: 12px;
 	float:left;
-	max-height: 15px;
+	min-height: 75px;
+  display: inline-block;
 
 }
-/*nav bar*/
+/*nav bar not collapsed*/
+
 nav {background:transparent;float:right; margin-right:5%;padding-bottom: 3%;}
 nav ul {text-align:center;}
 nav ul li {float:left;display:inline; width:auto; padding-top: 1.7%;}
@@ -39,17 +42,44 @@ nav ul li:hover {text-decoration: underline;}
 nav ul li a {display:block;padding:0px 25px;color:#2E2C2A; font-size:14px; font-weight: 700; text-decoration: none;}
 nav ul li ul {position:absolute; width: 130px;float:left; clear:left;background: rgba(230, 230, 230, 0.95); list-style: none; padding-left: 0px;}
 nav ul li ul li {float:left; clear:left; text-align: left;}
-nav ul li ul li a {display:block;padding:15px 0px;color:#2E2C2A; font-weight: 700; text-decoration: none;}
+nav ul li ul li a {display:block; padding:15px 0px;color:#2E2C2A; font-weight: 700; text-decoration: none;}
 nav ul li ul li:hover a {text-decoration: underline;}
 nav ul li ul.fallback {display:none;}
 nav ul li:hover ul.fallback {display:block;}
 
+nav .line {width: 3em; height: .3em; background-color: black; border-radius: 1em; margin-top: .25em;}
+
+@media screen and (max-width: 850px) {
+  nav {float:left; width:100%; height: auto; line-height: 1.5em; padding-bottom: 0;}
+  .container{height: auto;  position: relative;}
+  nav ul li ul{position: relative;}
+  
+  header{margin-bottom: 0;}
+  }
+
+@media screen and (max-width: 535px) {
+  nav ul li ul{list-style: none;}
+  nav ul li ul li {display: block; float:left; clear: left;}
+  nav ul li a{ font-size:  10px;}
+}  
+
+@media screen and (max-width: 461px) {
+  nav ul li ul{list-style: none;}
+  nav ul li ul li {display: block; float:left; clear: left; }
+  nav ul li a{ font-size:  10px; min-width: 461px; text-align: left; }
+}  
+
 /*carousel*/
-.carholder {width:100%; position: absolute; background-color: #d9cfc4; height: 400px; border: #2E2C2A solid 2px;}
+.carholder {width:100%; position: absolute; background-color: #d9cfc4; height: 475px; border: #2E2C2A solid 2px;}
+
+
+#owl-main .item{
+  max-height: 475px;
+}
 #owl-main .item img{
     display: block;
+    margin: 0 auto;
     width: auto;
-    max-height: 400px;
-    margin: 0 auto;	
+    height: auto;
 }
 

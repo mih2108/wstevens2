@@ -21,7 +21,7 @@
 				    <li>
 				      <a href="#">About</a>
 				      <ul class="fallback">
-				        <li><a href="#">About Wallace Stevens</a></li>
+				        <li><a href="about">About Wallace Stevens</a></li>
 				        <li><a href="#">The Wallace Stevens Society</a></li>
 				        <li><a href="#">Upcoming Events	</a></li>
 				      </ul>
@@ -47,17 +47,43 @@
 	<table>
 	<tr id="selectors" class="form-row">
 		<td><label for="topic">Topic:</label></td>
-		<td><div class="dropdown"><select id="topic"><option value=0>Choose One</option><option value=1>Poetry</option><option value="2">Work</option></select></div></td>
-		<td><label for="mood">Mood:</label></td>
-		<td><div class="dropdown"><select id="mood"><option value=0>Choose One</option><option value=1>Inspiring</option><option value=2>Humorous	</option></select></div></td>
-		<td id='button-cell'><button id="button">Generate Quote</button></td>	
-		
-		
+		<td><div class="dropdown"><select id="topic"><option value=0>Choose One</option>
+		<option value=1>Age</option>
+		<option value=2>Beauty</option>
+		<option value=3>Imagination</option>
+		<option value=4>Love</option>
+		<option value=5>Nature</option>
+		<option value=6>Poetry</option>
+		<option value=17>Self</option>
+		<option value=19>Meditative</option>
+		<option value=21>Society</option>
+		<option value=23>Thought</option>
+	</select></div></td>
+
+
+		<td><label for="mood">Tone:</label></td>
+		<td><div class="dropdown"><select id="mood"><option value=0>Choose One</option>
+			<option value=101>Humorous</option>
+			<option value=102>Dark</option>
+			<option value=103>Whimsical</option>
+			<option value=104>Critical</option>
+			<option value=105>Hopeful</option>
+			<option value=106>Spiritual</option>
+			<option value=107>Sentimental</option>
+			<option value=108>Inspiring</option>
+			<option value=109>Serene</option>
+			<option value=110>Uppity</option>
+		</select></div></td>
+		<td id='button-cell'><button id="button">Generate Quote</button></td>		
 	</tr>
-	<tr class="form-row">
-		<td id="quote"></td>
-	</tr>
+
+	  <tr id="quote">
+	  </tr>
+	  <tr id="source">
+	  </tr>
+
 	</table>
+
 	</div>
 </form>
 </div>
