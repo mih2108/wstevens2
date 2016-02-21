@@ -69,9 +69,9 @@
         <td class="ptitle"><%= link_to poem.title, poem %></td>
         <td class="pyear"><%= poem.year %></td>
         <td class="pbook"><%= poem.book %></td>
-<!--         <td><%= link_to 'Show', poem %></td>
+        <td><%= link_to 'Show', poem %></td>
         <td><%= link_to 'Edit', edit_poem_path(poem) %></td>
-        <td><%= link_to 'Destroy', poem, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
+        <td><%= link_to 'Destroy', poem, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -79,7 +79,7 @@
 
 <br>
 
-<!-- <%= link_to 'New Poem', new_poem_path %> -->
+<%= link_to 'New Poem', new_poem_path %> 
 </div>
 <%= javascript_include_tag("public")%>
 <%= javascript_include_tag("index")%>
