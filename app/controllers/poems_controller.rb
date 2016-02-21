@@ -7,8 +7,8 @@ class PoemsController < ApplicationController
     if params[:search]
       @poems = Poem.search(params[:search]).order("title DESC")
     else
-      @poems=[]
-      # @poems = Poem.order("title DESC")
+      # @poems=[]
+      @poems = Poem.order("title DESC")
     end
   end
 
