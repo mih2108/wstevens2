@@ -1,17 +1,16 @@
-$(document).ready(function() {
- 
-  $("#owl-main").owlCarousel({
- 
-      autoPlay: 3000, //Set AutoPlay to 3 seconds
-       autoplayHoverPause:true,
-       navSped: 4000, 
-      items : 1,
-      itemsDesktop : [1199,3],
-      itemsDesktopSmall : [979,3]
- 
+$(document).ready(function () {
+    var carousel = $("#owl-main");
+  carousel.owlCarousel({
+    navigation:true,
+    singleItem:true,
+    navigationText: [
+      "<",
+      ">"
+      ],
   });
- 
-})
+
+  
+});
 
 $('nav li ul').hide().removeClass('fallback');
 $('nav li').hover(

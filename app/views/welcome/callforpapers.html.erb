@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Wallace Stevens Society</title>
+  <% @page_title="Wallace Stevens Society" %>
+  <!--<link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css"> -->
+  <%= stylesheet_link_tag('normalize', :media =>'all') %>
+  <%= stylesheet_link_tag('index_poem', :media =>'all') %>
+  <%= stylesheet_link_tag('owl.carousel.css', :media => 'all') %>
+  <%= stylesheet_link_tag('owl.theme.css', :media => 'all') %>
+  <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo"><%= link_to image_tag('logo.png'), root_path %></div>
+        <nav>
+          <ul>
+            <li>
+              <a href="#">About</a>
+              <ul class="fallback">
+                <li><a href="about">About Wallace Stevens</a></li>
+                <li><a href="#">The Wallace Stevens Society</a></li>
+                <li><a href="#">Upcoming Events </a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Journal</a>
+              <ul class="fallback">
+                <li><a href="#">Call for Papers</a></li>
+                <li><a href="#">Listing of Articles</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">Online Concordance</a></li>
+          </ul>
+        </nav>
+
+    </div>
+  </header>
+<div class="maintext">
+        <div class="heading"><h1>CALL FOR PAPERS</h1></div>
+        <div class="maintext-p"><p>
+          The Wallace Stevens Society seeks proposals on Stevens and cognition for a panel or roundtable at the American Literature Association annual conference (New York City, June 9-10, 2016). Over the past two decades, cognitive approaches to literature have flourished by redefining texts as “mental spaces” in which readers negotiate linguistic and perceptual challenges posed by literary structures. This conference presentation, coupled with a subsequent special issue of The Wallace Stevens Journal, will be a first sustained look at Stevens’ poetry and/or prose in relation to cognitive models of metaphor, narrative, deixis, rhythm, sound, grammar, rhyme, and the lyric voice. Possible topics to explore include the following:</p>
+          <br>
+          <ul>
+            <li>shifts in reference using pronouns or ambiguous anaphors;</li>
+            <li>effects of abstract or concrete description on figure/ground relationships;</li>
+            <li>uses of phonetic echoes or other sonic structures to guide, distract, or deflect the reader’s attention;</li>
+            <li>the role of conversational or formal speech rhythms in Stevens’ blank verse and their effects on a metrical prototype;</li>
+            <li>rhythm as a shifting or dynamic field of attention, especially in the tension between Stevens' formal rhythms and his free verse; and</li>
+            <li>metaphor as a mapping of conceptual domains and its power to create or dissolve textual worlds.</li>
+          </ul>
+          <br>
+          <p>Please send 250-500 word proposals for conference presentations and/or special-issue articles to Nicholas Milquetoast at nmymilquetoast@columbia.edu and David Humbert at humbert@nyu.edu by May 1, 2016  . Authors who cannot attend the ALA but may be interested in submitting an essay for a special issue are encouraged to forward proposals as well.
+        </p>
+        </div>
+</div>
+
+
+<%= javascript_include_tag("public")%>
+<%= javascript_include_tag("index")%>
+<%= javascript_include_tag("owl.carousel.js") %>
+</body>
+</html>
+<body>

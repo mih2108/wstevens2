@@ -40,29 +40,32 @@
 
     </div>
   </header>
-<p id="notice"><%= notice %></p>
+<div class="maintext">
+        <p id="notice"><%= notice %></p>
 
-<p>
+        <p>
 
-<strong>  <%= @poem.title %> </strong>
-</p>
+        <strong>  <%= @poem.title %> </strong>
+        </p>
 
-<p>
-  <%= simple_format(@poem.text)%>
-</p>
+        <p>
+          <%= simple_format(@poem.text)%>
+        </p>
 
-<p>
-  <strong>Year Published:</strong>
-  <%= @poem.year %>
-</p>
+        <p>
+          <strong>Year Published:</strong>
+          <%= @poem.year %>
+        </p>
 
-<p>
-  <strong>Publication:</strong>
-  <%= @poem.book %>
-</p>
+        <p>
+          <strong>Publication:</strong>
+          <%= @poem.book %>
+        </p>
 
-<!-- <%= link_to 'Edit', edit_poem_path(@poem) %> |
-<%= link_to 'Back', poems_path %> -->
+        <p><%= link_to 'Back', poems_path %> </p>
+</div>
+
+
 <%= javascript_include_tag("public")%>
 <%= javascript_include_tag("index")%>
 <%= javascript_include_tag("owl.carousel.js") %>

@@ -42,7 +42,7 @@
   </header>
 <p id="notice"><%= notice %></p>
 <div class="maintext">
-<h3>WALLACE STEVENS</h3><h1>ONLINE CONCORDANCE</h1>
+<div class="heading"><h3>WALLACE STEVENS</h3><h1>ONLINE CONCORDANCE</h1></div>
 
   <%= form_tag(poems_path, :method => "get", class: "navbar-form", id: "search-form") do %>
     <div class="input-append">
@@ -52,34 +52,32 @@
       <button class="btn" type="submit">Search</button>
        <% end %>
     </div>
+<% if ((@poems.count > 0) & (@poems.count != Poem.count)) %>
+    <table>
+      <thead>
+        <tr class="form-row">
+          <th class="ptitle">Title</th>
+          <th class="pyear">Year Published</th>
+          <th class="pbook">Publication</th>
+          <th colspan="3"></th>
+        </tr>
+      </thead>
 
-<table>
-  <thead>
-    <tr class="form-row">
-      <th class="ptitle">Title</th>
-      <th class="pyear">Year Published</th>
-      <th class="pbook">Publication</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+      <tbody>
+        <% @poems.each do |poem| %>
+          <tr class="form-row">
+            <td class="ptitle"><%= link_to poem.title, poem %></td>
+            <td class="pyear"><%= poem.year %></td>
+            <td class="pbook"><%= poem.book %></td>
 
-  <tbody>
-    <% @poems.each do |poem| %>
-      <tr class="form-row">
-        <td class="ptitle"><%= link_to poem.title, poem %></td>
-        <td class="pyear"><%= poem.year %></td>
-        <td class="pbook"><%= poem.book %></td>
-        <td><%= link_to 'Show', poem %></td>
-        <td><%= link_to 'Edit', edit_poem_path(poem) %></td>
-        <td><%= link_to 'Destroy', poem, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+<% end %>
 <br>
 
-<%= link_to 'New Poem', new_poem_path %> 
+
 </div>
 <%= javascript_include_tag("public")%>
 <%= javascript_include_tag("index")%>

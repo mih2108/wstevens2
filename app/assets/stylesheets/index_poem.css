@@ -4,7 +4,7 @@ width: 100%;
 }
 body {
 font-family: 'PT Serif', serif;	
-font-size: 18px;
+font-size: 14px;
   background: url('background.png') no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -40,7 +40,7 @@ nav {background:transparent;float:right; margin-right:5%;padding-bottom: 3%;}
 nav ul {text-align:center;}
 nav ul li {float:left;display:inline; width:auto; padding-top: 1.7%;}
 nav ul li:hover {text-decoration: underline;}
-nav ul li a {display:block;padding:0px 25px;color:#2E2C2A; font-size:18px; font-weight: 700; text-decoration: none;}
+nav ul li a {display:block;padding:0px 25px;color:#2E2C2A; font-size:14px; font-weight: 700; text-decoration: none;}
 nav ul li ul {position:absolute; width: 130px;float:left; clear:left;background: rgba(230, 230, 230, 0.95); list-style: none; padding-left: 0px;}
 nav ul li ul li {float:left; clear:left; text-align: left;}
 nav ul li ul li a {display:block; padding:15px 0px;color:#2E2C2A; font-weight: 700; text-decoration: none;}
@@ -71,7 +71,14 @@ nav .line {width: 3em; height: .3em; background-color: black; border-radius: 1em
 }  
 
 .maintext {width:100%; min-height: 475px;position: relative; float:left; background-color: rgba(217, 207, 196, .6); padding:3%; color:#2E2C2A; border: #2E2C2A solid 2px;}
-table {background: white; border: 2px solid #2E2C2A; width: auto;}
+.maintext-p{ text-align: center; width: 700px; margin: 0 auto;}
+.maintext p{text-align: left}
+.maintext ul{ text-align: left; width: 700px; margin: 0 auto;}
+.maintext ul li{text-align: left; margin-left: 4em}
+.heading{ text-align: center; margin-left: auto; margin-right: auto; margin-bottom: 2em;}
+.heading h1,h3{display: inline;}
+.heading h3{padding-right: .5em}
+table {background: white; border: 2px solid #2E2C2A; width: auto; text-align: center; margin:0 auto;}
 .form-row{width:auto; border: 2px solid #2E2C2A;padding-top: 1em; padding-right: 2em;}
 /*.form-row:first-of-type{background-color: gray;}*/
 td {text-align: left; padding-left:1em; float:left; padding-top: 1em; padding-bottom: 1em;}
@@ -80,7 +87,7 @@ th {text-align: left; padding-left:1em; float:left; padding-top: 1em; padding-bo
 .pyear{width:10em;}
 .pbook{width:12em;}
 .span2{width: 30em;}
-.input-append{margin-bottom: 2em;}
+.input-append{margin-bottom: 2em; text-align: center; margin-left: auto; margin-right: auto;}
 thead{background-color: rgba(230, 230, 230, 0.95);}
 
 

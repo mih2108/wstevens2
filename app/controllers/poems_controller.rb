@@ -6,9 +6,10 @@ class PoemsController < ApplicationController
   def index
     if params[:search]
       @poems = Poem.search(params[:search]).order("title DESC")
+      @poemsall=Poem.all
     else
-      # @poems=[]
-      @poems = Poem.order("title DESC")
+      @poems=[]
+      # @poems = Poem.order("title DESC")
     end
   end
 
