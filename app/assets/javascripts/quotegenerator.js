@@ -17,7 +17,7 @@ quote_array=["Old people are tremendous frauds",
 			"Success as a result of industry is a peasant ideal",
 			"It can never be satisfied, the mind, never",
 			"It is only one's thought that fill a room with something more than furniture"]
-source_array=["1907 Letter by Wallce Stevens",
+source_array=["1907 Letter by Wallace Stevens",
 			'Sunday Morning',
 			'Thirteen Ways of Looking at a Blackbird',
 			'The Necessary Angel: <br /> Essays on Reality and the Imagination',
