@@ -147,3 +147,7 @@ nav .line {width: 3em; height: .3em; background-color: black; border-radius: 1em
   color: #2E2C2A;
   border: none;
 }
+
+.owl-item.animated {
+    visibility: visible;
+}
