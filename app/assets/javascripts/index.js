@@ -2,7 +2,7 @@ $(document).ready(function () {
     var carousel = $("#owl-main");
   carousel.owlCarousel({
     autoPlay: 3000,
-    transitionStyle: "fade",
+    // transitionStyle: "fade",
     navigation:true,
     singleItem:true,
     navigationText: [
