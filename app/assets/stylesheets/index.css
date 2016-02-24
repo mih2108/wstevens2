@@ -3,7 +3,7 @@ height: 100%;
 width: 100%;
 }
 body {
-font-family: 'PT Serif', serif;	
+font-family: 'PT Serif', serif; 
 font-size: 14px;
   background: url('background.png') no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -16,21 +16,21 @@ header {
   padding: 5px 0 30px 0;
   overflow: hidden;
   height: auto;
-  margin-bottom: 3em;
+  margin-bottom: 3.5em;
 }
 
 .container {
-	width:100%;
-	margin: 0 auto;
-	padding-left: 2%;
-	z-index:99;
-	position:absolute;
+  width:100%;
+  margin: 0 auto;
+  padding-left: 2%;
+  z-index:99;
+  position:absolute;
 }
 
 .logo {
-	font-size: 12px;
-	float:left;
-	min-height: 75px;
+  font-size: 12px;
+  float:left;
+  min-height: 75px;
   display: inline-block;
 
 }
@@ -68,10 +68,10 @@ nav .line {width: 3em; height: .3em; background-color: black; border-radius: 1em
   nav ul li ul{list-style: none;}
   nav ul li ul li {display: block; float:left; clear: left; }
   nav ul li a{ font-size:  10px; min-width: 461px; text-align: left; }
-}  
+}
 
 /*carousel*/
-.carholder {width:100%; position: absolute; background-color: #d9cfc4; height: 545px; border: #2E2C2A solid 2px;}
+.carholder {width:100%; position: absolute; background-color: #d9cfc4; height: 575px; border: #2E2C2A solid 2px;}
 
 #owl-main{
   width: 100%;
@@ -79,7 +79,7 @@ nav .line {width: 3em; height: .3em; background-color: black; border-radius: 1em
 }
 
 #owl-main .item{
-  padding-top: 15px;
+  padding-top: 30px;  
   max-height: 475px;
   margin: 0 auto;
   text-align: center;

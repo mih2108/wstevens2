@@ -37,33 +37,36 @@
             <li><a href="poems">Online Concordance</a></li>
           </ul>
         </nav>
+
     </div>
   </header>
-<div class="maintext-poem">
-        <p id="notice"><%= notice %></p>
+<div class="maintext">
+      <h1>RESOURCES</h1>
+      <table>
+        <tr class="form-row">
+          <td class="resource">
+            <h4><a href="https://www.poets.org/">American Academy of Poets</a></h4>
+                <p> Information on Stevens's life and a collection of his poetry </p>
+          </td>
+        </tr>
 
-        <p id="poem">
+        <tr class="form-row">
+          <td class="resource">
+        <h4><a href="http://www.wallacestevensbiography.com/">Wallace Stevens: A Dual Life as Poet and Insurance Executive</a></h4>
+                <p>A Biography by Alison Johnson</p>
+          </td>
+        </tr>
 
-        <strong>  <%= @poem.title %> </strong>
-        </p>
+        <tr class="form-row">
+          <td class="resource">
+        <h4><a href="http://www.stevenspoetry.org/stevensbio.htm">The Hartford Friends of Wallace Stevens</a></h4>
+                <p>Non-profit organization formed for the purposes of promoting the literary arts and preserving the cultural legacy of Wallace Stevens in Hartford, Connecticut, and beyond.</p>
+          </td>
+        </tr>
 
-        <div class="poemtext">
-        <p id="poem" style="text-align:center;">
-          <%= simple_format(@poem.text)%>
-        </p>
-        </div>
+      </table>
 
-        <p id="poem">
-          <strong>Year Published:</strong>
-          <%= @poem.year %>
-        </p>
 
-        <p id="poem">
-          <strong>Publication:</strong>
-          <%= @poem.book %>
-        </p>
-
-        <p id="poem"><%= link_to 'Back', poems_path %> </p>
 </div>
 
 

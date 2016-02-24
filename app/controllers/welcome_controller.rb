@@ -31,4 +31,23 @@ def quotegenerator
 
 end
 
+def callforpapers
+
+end
+
+def listingofpapers
+
+end
+
+def aboutwss
+
+end
+
+def upcomingevents
+
+end
+
+def resources
+end
+
 end

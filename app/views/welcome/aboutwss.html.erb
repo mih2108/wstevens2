@@ -7,7 +7,7 @@
 	<!--<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css"> -->
 	<%= stylesheet_link_tag('normalize', :media =>'all') %>
-	<%= stylesheet_link_tag('index', :media =>'all') %>
+	<%= stylesheet_link_tag('about', :media =>'all') %>
 	<%= stylesheet_link_tag('owl.carousel.css', :media => 'all') %>
 	<%= stylesheet_link_tag('owl.theme.css', :media => 'all') %>
 	<link href='https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
@@ -15,8 +15,8 @@
 <body>
 	<header>
 		<div class="container">
-			<div class="logo"><%= image_tag('logo.png') %></div>
-				<nav>
+			<div class="logo"><%= link_to image_tag('logo.png'), 'index' %></div>
+			<nav>
 				  <ul>
 				    <li>
 				      <a href="	about">About</a>
@@ -37,38 +37,17 @@
 				    <li><a href="poems">Online Concordance</a></li>
 				  </ul>
 				</nav>
-
 		</div>
 	</header>
+<div class="maintext">
+<div class="biopic"><%= image_tag('wallace_stevens_bio_2.jpg') %></div>
+<div class="abouttext">
+	<div class="heading"><h3>ABOUT</h3><h1>THE WALLACE STEVENS SOCIETY</h1></div>
 
-  <div class="carholder">
-  <div class="wrapper-with-margin">
-  <div id="owl-main" class="owl-carousel owl-theme">
+	<p>The Wallace Stevens Society is devoted to the study and promotion of Wallace Stevens's writings and poetry.  We are the sponsor of <em>The Wallace Stevens Journal</em>, which has been has been publishing scholarly articles, poems, book reviews, news, and bibliographies since 1977.  The society also frequently sponsers panels discussing Stevens's work.  All are welcome to join </p>
 
-	   	<div class="item">
-	     	<%= link_to image_tag('wallace_stevens_about.png'),'about'%>
-	    </div>
-	    <div class="item">
-	      	<%= link_to image_tag('conc.png'), 'poems' %>
-	    </div>
-	    <div class="item">
-	      	<%= link_to image_tag('quotegenerator.png'), 'quotegenerator' %>
-	    </div>
-	    <div class="item">
-	     	<%= link_to image_tag('journalstack.png'),'callforpapers'%>
-	    </div>
-	    <div class="item">
-	      	<%= link_to image_tag('quotegenerator.png'), 'quotegenerator' %>
-	    </div>
-	    <div class="item">
-	      	<%= link_to image_tag('upcomingevents.png'), 'upcomingevents' %>
-	    </div>
- </div>
- </div>
+
 </div>
-<!--     <li><%= image_tag('wallace_stevens_main.png')%></li>
-    <li><%= image_tag('test.png')%></li> -->
- 
 
 
 <%= javascript_include_tag('jquery-1.11.3.min') %>

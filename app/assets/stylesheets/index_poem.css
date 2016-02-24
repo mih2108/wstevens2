@@ -71,10 +71,14 @@ nav .line {width: 3em; height: .3em; background-color: black; border-radius: 1em
 }  
 
 .maintext {width:100%; min-height: 475px;position: relative; float:left; background-color: rgba(217, 207, 196, .6); padding:3%; color:#2E2C2A; border: #2E2C2A solid 2px;}
+.maintext-poem {width:100%; min-height: 475px;position: relative; float:left; background-color: rgba(217, 207, 196, .6); padding:3%; color:#2E2C2A; border: #2E2C2A solid 2px;}
 .maintext-p{ text-align: center; width: 700px; margin: 0 auto;}
 .maintext p{text-align: left}
+.maintext-poem p#poem{text-align: center; text-align: center;}
+.poemtext{margin: 0 auto; text-align: center;}
 .maintext ul{ text-align: left; width: 700px; margin: 0 auto;}
 .maintext ul li{text-align: left; margin-left: 4em}
+.maintext h1{text-align: center;}
 .heading{ text-align: center; margin-left: auto; margin-right: auto; margin-bottom: 2em;}
 .heading h1,h3{display: inline;}
 .heading h3{padding-right: .5em}
@@ -89,6 +93,15 @@ th {text-align: left; padding-left:1em; float:left; padding-top: 1em; padding-bo
 .span2{width: 30em;}
 .input-append{margin-bottom: 2em; text-align: center; margin-left: auto; margin-right: auto;}
 thead{background-color: rgba(230, 230, 230, 0.95);}
+.ltitle{width:30em;}
+.lauthor{width:12em;}
+.ljournal{width:10em;}
+.event {width: 30em;}
+.resource {width: 40em;}
+.maintext ul{list-style: none; text-align: center; margin-left: 30em;}
+.maintext ul h4{display: inline;}
+.max-width ul li{}
+.maintext ul li p{padding-left: 2em;}
 
 
 

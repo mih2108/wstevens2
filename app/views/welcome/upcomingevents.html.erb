@@ -37,33 +37,30 @@
             <li><a href="poems">Online Concordance</a></li>
           </ul>
         </nav>
+
     </div>
   </header>
-<div class="maintext-poem">
-        <p id="notice"><%= notice %></p>
+<div class="maintext">
+      <h1>UPCOMING EVENTS</h1>
+      <table>
+        <tr class="form-row">
+          <td class="event">
+            <h4><a href="callforpapers">Call for Papers</a></h4>
+                <p><strong>Deadline: </strong>March 15, 2016 </p>
+          </td>
+        </tr>
 
-        <p id="poem">
+        <tr class="form-row">
+          <td class="event">
+        <h4><a href="http://2016.alaannual.org/">ALA Annual Conference</a></h4>
+                <p>June 23-28, 2016 <br>
+                  Orange County Convention Center, Orlando, FL</p>
+          </td>
+        </tr>
 
-        <strong>  <%= @poem.title %> </strong>
-        </p>
+      </table>
 
-        <div class="poemtext">
-        <p id="poem" style="text-align:center;">
-          <%= simple_format(@poem.text)%>
-        </p>
-        </div>
 
-        <p id="poem">
-          <strong>Year Published:</strong>
-          <%= @poem.year %>
-        </p>
-
-        <p id="poem">
-          <strong>Publication:</strong>
-          <%= @poem.book %>
-        </p>
-
-        <p id="poem"><%= link_to 'Back', poems_path %> </p>
 </div>
 
 
